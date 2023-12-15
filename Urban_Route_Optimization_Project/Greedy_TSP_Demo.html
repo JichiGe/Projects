@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9b0be5a39148bdb04f8c4de737c331ad {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9b0be5a39148bdb04f8c4de737c331ad" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9b0be5a39148bdb04f8c4de737c331ad = L.map(
+                "map_9b0be5a39148bdb04f8c4de737c331ad",
+                {
+                    center: [49.27306, -123.1252],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b3a45b8641dc079e47fd3cb27409c67d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_b3a45b8641dc079e47fd3cb27409c67d.addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+    
+            var poly_line_3025003a5f4364eccf8b1df5bbcb4a94 = L.polyline(
+                [[49.2731465, -123.1259058], [49.2742003, -123.124858], [49.2748306, -123.125834], [49.2754606, -123.126824], [49.2757503, -123.1272852], [49.2760919, -123.127815], [49.2756443, -123.1284983], [49.2740487, -123.1310361], [49.269637, -123.1376576], [49.2675455, -123.1385328], [49.267869, -123.1392836], [49.2678456, -123.1380751], [49.2678405, -123.1379255], [49.2679533, -123.1379588], [49.2691243, -123.1380072], [49.269291, -123.1378918], [49.2693734, -123.1377772], [49.270621, -123.13608], [49.2700974, -123.1351589], [49.2710637, -123.1338992], [49.2711416, -123.1340092], [49.2718673, -123.1349389]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+            poly_line_3025003a5f4364eccf8b1df5bbcb4a94.bindTooltip(
+                `<div>
+                     1. Path from Lotus Land Tours to Granville Island
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1f724f789e804f6835354baf4b07d82c = L.polyline(
+                [[49.2718673, -123.1349389], [49.2711297, -123.1352981], [49.270621, -123.13608], [49.2693734, -123.1377772], [49.269291, -123.1378918], [49.2689678, -123.1384921], [49.2688572, -123.1385179], [49.268468, -123.1383336], [49.2679512, -123.1381137], [49.2678456, -123.1380751], [49.2678405, -123.1379255], [49.267509, -123.1367549], [49.2667396, -123.1360576], [49.2662243, -123.1360573], [49.2661555, -123.1360953], [49.2661947, -123.138475], [49.2653477, -123.13851], [49.2645111, -123.1385418]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+            poly_line_1f724f789e804f6835354baf4b07d82c.bindTooltip(
+                `<div>
+                     2. Path from Granville Island to Douglas Reynolds Gallery
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_70afb566430369ef523f0e7d40c31d25 = L.polyline(
+                [[49.2645111, -123.1385418], [49.2636438, -123.138575], [49.2635677, -123.138577], [49.2626323, -123.138612], [49.2617212, -123.138645]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+            poly_line_70afb566430369ef523f0e7d40c31d25.bindTooltip(
+                `<div>
+                     3. Path from Douglas Reynolds Gallery to Arts Club Theatre Company
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bd19bb79e70cb1c6433f31dfaeaf0781 = L.polyline(
+                [[49.2617212, -123.138645], [49.2626323, -123.138612], [49.2635677, -123.138577], [49.2636438, -123.138575], [49.2645111, -123.1385418], [49.2653477, -123.13851], [49.2653828, -123.140818], [49.2658024, -123.1409396], [49.2662294, -123.1409373], [49.2670839, -123.1409093], [49.2671226, -123.1432656], [49.2679852, -123.143233], [49.2688656, -123.143204], [49.2697501, -123.143178], [49.2706354, -123.1431525], [49.2706624, -123.145493], [49.2706796, -123.1464425], [49.2715875, -123.1464113], [49.2716085, -123.1478282], [49.2724697, -123.1478058], [49.2734805, -123.14777], [49.2744099, -123.1477361], [49.2744549, -123.1476699], [49.274503, -123.1477332], [49.2753361, -123.1477025], [49.2761713, -123.1476728], [49.2762204, -123.147596], [49.2762755, -123.1476673], [49.2768245, -123.1476479]],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+            poly_line_bd19bb79e70cb1c6433f31dfaeaf0781.bindTooltip(
+                `<div>
+                     4. Path from Arts Club Theatre Company to Vancouver Maritime Museum
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_995bbb39cad6c1aaba97602beed61440 = L.polyline(
+                [[49.2768245, -123.1476479], [49.2762755, -123.1476673], [49.2762239, -123.1477563], [49.2761713, -123.1476728], [49.2753361, -123.1477025], [49.274503, -123.1477332], [49.2744569, -123.1478127], [49.2744099, -123.1477361], [49.2734805, -123.14777], [49.2724697, -123.1478058], [49.2724479, -123.146262], [49.2724344, -123.1452808], [49.2724323, -123.1451272], [49.2731508, -123.1441426], [49.2769867, -123.132402], [49.2782845, -123.134394], [49.2796793, -123.1365521], [49.2807011, -123.138133], [49.2815942, -123.1394869], [49.282382, -123.1406886], [49.2831357, -123.1418071], [49.2846354, -123.1427683], [49.2862343, -123.1424718], [49.2866208, -123.1423938], [49.2872031, -123.141913], [49.287257, -123.141831], [49.2875751, -123.1413508]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+            poly_line_995bbb39cad6c1aaba97602beed61440.bindTooltip(
+                `<div>
+                     5. Path from Vancouver Maritime Museum to The Comedy Department
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_19d9a4ed66c3b3680c1cd5c398149dff = L.polyline(
+                [[49.2875751, -123.1413508], [49.2879623, -123.1407671], [49.2886244, -123.139768], [49.2887183, -123.1396268], [49.2893714, -123.138641], [49.2900755, -123.1375723], [49.2907781, -123.1365131], [49.2914807, -123.135452], [49.2921918, -123.134379], [49.2926042, -123.133737], [49.2930709, -123.1330562]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+            poly_line_19d9a4ed66c3b3680c1cd5c398149dff.bindTooltip(
+                `<div>
+                     6. Path from The Comedy Department to Harbour Cruises
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_919a1b5dc7b6def28230d167153568d4 = L.polyline(
+                [[49.2930709, -123.1330562], [49.2926042, -123.133737], [49.2915926, -123.1321711], [49.2905705, -123.130603], [49.2904303, -123.1303888], [49.2902661, -123.130144], [49.2897983, -123.129425], [49.2890478, -123.128264], [49.2886282, -123.1288767], [49.2877395, -123.1275051], [49.2867136, -123.125918], [49.2853106, -123.123767]],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+            poly_line_919a1b5dc7b6def28230d167153568d4.bindTooltip(
+                `<div>
+                     7. Path from Harbour Cruises to CHI, the Spa at Shangri-la
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a61d1de2a6c5036a2e85e3076ba30b4f = L.polyline(
+                [[49.2853106, -123.123767], [49.284611, -123.124837], [49.283908, -123.12591], [49.2836099, -123.1254817], [49.2831444, -123.1252041], [49.2822306, -123.124411], [49.2818922, -123.1249282], [49.2811819, -123.1260108], [49.2805374, -123.125005], [49.279894, -123.124035], [49.2792583, -123.123038], [49.278619, -123.122038], [49.2779965, -123.121061], [49.2773632, -123.120069], [49.2769892, -123.119483], [49.27665, -123.118966], [49.2761118, -123.118109], [49.2755295, -123.1171497], [49.2690573, -123.1150249], [49.2662229, -123.1148988], [49.2654035, -123.1148552], [49.2649448, -123.114876], [49.2641256, -123.11473], [49.2640339, -123.114735], [49.2632096, -123.114778], [49.2622503, -123.114829], [49.2609741, -123.1149837], [49.2604014, -123.1149945], [49.2594601, -123.1150098], [49.2587392, -123.1150435], [49.2583664, -123.1150688], [49.2578228, -123.1151765], [49.2569135, -123.1151933], [49.2558901, -123.115124], [49.2549012, -123.1151635], [49.2540074, -123.1151993], [49.253009, -123.1152392], [49.252217, -123.1152709], [49.252066, -123.1152769], [49.2512098, -123.1153111], [49.2500967, -123.1153556], [49.2490617, -123.1153972], [49.2489375, -123.115537], [49.2479527, -123.1156753], [49.2470303, -123.1157212], [49.2461193, -123.1157563], [49.2455072, -123.1157831], [49.2451861, -123.115832], [49.243764, -123.1174159], [49.2436091, -123.1171999]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+            poly_line_a61d1de2a6c5036a2e85e3076ba30b4f.bindTooltip(
+                `<div>
+                     8. Path from CHI, the Spa at Shangri-la to Bloedel Conservatory
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2be8d34bab9a8b807c0bc4ac421cc0cb = L.polyline(
+                [[49.2436091, -123.1171999], [49.243764, -123.1174159], [49.2431975, -123.1181451], [49.2421632, -123.1185188], [49.241093, -123.118579], [49.2403784, -123.1183693], [49.2398364, -123.119531], [49.2398242, -123.1207065], [49.2374154, -123.1207857], [49.2374646, -123.1222445], [49.2375136, -123.1236788], [49.2375706, -123.1237482], [49.2375173, -123.12383], [49.2376653, -123.127968], [49.2377412, -123.1302561], [49.2378124, -123.132423], [49.2378884, -123.1347153]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+            poly_line_2be8d34bab9a8b807c0bc4ac421cc0cb.bindTooltip(
+                `<div>
+                     9. Path from Bloedel Conservatory to VanDusen Botanical Garden
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_75475f3a9e7d81dbc3f79d8b6bb72660 = L.polyline(
+                [[49.2378884, -123.1347153], [49.2378124, -123.132423], [49.2377412, -123.1302561], [49.2376653, -123.127968], [49.2414509, -123.127833], [49.2413285, -123.1249999], [49.2412755, -123.123621], [49.2411685, -123.120661], [49.241093, -123.118579], [49.2410846, -123.1183076], [49.2431543, -123.1178176], [49.2436091, -123.1171999], [49.2451786, -123.115359], [49.245107, -123.1123777], [49.2448259, -123.111329], [49.2454607, -123.1101108], [49.2460136, -123.1089748], [49.2465983, -123.1078823], [49.2469177, -123.1076157], [49.2477983, -123.1075013], [49.2488947, -123.10746], [49.2499643, -123.107412], [49.2499379, -123.1049417], [49.2509904, -123.1048979], [49.2518258, -123.1048657], [49.2518716, -123.1047941], [49.2518378, -123.1029012], [49.2527459, -123.1028791], [49.2537367, -123.1028349], [49.2546399, -123.1027954], [49.2547208, -123.1009376], [49.2547671, -123.0985034], [49.2547339, -123.0965693], [49.2546904, -123.0938534], [49.2546599, -123.0919171], [49.2555606, -123.0918691], [49.2555317, -123.089908], [49.2562937, -123.0898263], [49.2566171, -123.0897878], [49.2567374, -123.0897223], [49.2571602, -123.0893863], [49.257382, -123.0892249], [49.2574683, -123.0892475], [49.2579405, -123.089217], [49.2588146, -123.0891815], [49.2597165, -123.089165], [49.260624, -123.0891625], [49.2615256, -123.089148], [49.2624326, -123.08912], [49.2624239, -123.0871841], [49.2624677, -123.087067], [49.2624448, -123.0852412], [49.2633939, -123.0852172], [49.2633819, -123.0833], [49.2633611, -123.0813456], [49.2642283, -123.0813294], [49.2642711, -123.0812591], [49.2642575, -123.0794098], [49.2642405, -123.077495], [49.2651874, -123.077468], [49.2660338, -123.0774366], [49.2663033, -123.0774351], [49.2669561, -123.0774234], [49.2669389, -123.0754966], [49.2669221, -123.0735549], [49.2677808, -123.0735367], [49.2678303, -123.073467], [49.2678129, -123.0716075], [49.2687199, -123.0715871], [49.2696258, -123.0715704], [49.2696083, -123.069635], [49.2695912, -123.067692], [49.2704538, -123.0676828], [49.2704974, -123.0676142], [49.270484, -123.0657498], [49.2712718, -123.0657365], [49.2720864, -123.0637799], [49.2729705, -123.0598848], [49.2738554, -123.0579381], [49.2738466, -123.0565906], [49.2741534, -123.0565937], [49.2741559, -123.0546712], [49.2741469, -123.0520279], [49.2741479, -123.0494018], [49.2741786, -123.046876], [49.2749695, -123.0468656], [49.2753858, -123.0468558], [49.2758, -123.0468537], [49.2766305, -123.0468422], [49.2774578, -123.0467777], [49.2782713, -123.0467254], [49.279044, -123.046724], [49.2790932, -123.0466473], [49.2790903, -123.0440862], [49.2796284, -123.0440891], [49.280217, -123.0440752], [49.2802094, -123.041456]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+            poly_line_75475f3a9e7d81dbc3f79d8b6bb72660.bindTooltip(
+                `<div>
+                     10. Path from VanDusen Botanical Garden to PNE - Pacific National Exhibition
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8b89d9630cec3e08f05df8aee5dc4359 = L.polyline(
+                [[49.2802094, -123.041456], [49.2802106, -123.038843], [49.2811286, -123.038836], [49.281129, -123.0362071]],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+            poly_line_8b89d9630cec3e08f05df8aee5dc4359.bindTooltip(
+                `<div>
+                     11. Path from PNE - Pacific National Exhibition to Playland Amusement Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8fc6d461e329a31c32b6f98efef930c5 = L.marker(
+                [49.27306, -123.1252],
+                {}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+        var popup_c637721e1c374c16fc44ddd5a98c380e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_300785688dc999fdbc2e3fa6c83175de = $(`<div id="html_300785688dc999fdbc2e3fa6c83175de" style="width: 100.0%; height: 100.0%;">Lotus Land Tours</div>`)[0];
+                popup_c637721e1c374c16fc44ddd5a98c380e.setContent(html_300785688dc999fdbc2e3fa6c83175de);
+            
+        
+
+        marker_8fc6d461e329a31c32b6f98efef930c5.bindPopup(popup_c637721e1c374c16fc44ddd5a98c380e)
+        ;
+
+        
+    
+    
+            var marker_7cb5801d9052422fe41aaf56d9fff022 = L.marker(
+                [49.29351, -123.1339],
+                {}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+        var popup_5c557b6d2d9de2303ae78b981a74de8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_917f3e323515aec9cba3d5e81edd1c29 = $(`<div id="html_917f3e323515aec9cba3d5e81edd1c29" style="width: 100.0%; height: 100.0%;">Harbour Cruises</div>`)[0];
+                popup_5c557b6d2d9de2303ae78b981a74de8d.setContent(html_917f3e323515aec9cba3d5e81edd1c29);
+            
+        
+
+        marker_7cb5801d9052422fe41aaf56d9fff022.bindPopup(popup_5c557b6d2d9de2303ae78b981a74de8d)
+        ;
+
+        
+    
+    
+            var marker_c1629549e7b57b654fec6a28f20dd27e = L.marker(
+                [49.28278, -123.0373],
+                {}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+        var popup_55dddf9aa7a6abb4d181dfe865ab9641 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f59fb7ec113c7522fac974eca5f91e8 = $(`<div id="html_8f59fb7ec113c7522fac974eca5f91e8" style="width: 100.0%; height: 100.0%;">Playland Amusement Park</div>`)[0];
+                popup_55dddf9aa7a6abb4d181dfe865ab9641.setContent(html_8f59fb7ec113c7522fac974eca5f91e8);
+            
+        
+
+        marker_c1629549e7b57b654fec6a28f20dd27e.bindPopup(popup_55dddf9aa7a6abb4d181dfe865ab9641)
+        ;
+
+        
+    
+    
+            var marker_297ba8bdce02f3e6d561937fc4d48cfb = L.marker(
+                [49.23903, -123.1346],
+                {}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+        var popup_01477807abac91b01924727dc79d3e76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25acdbb51c938c0307e93393360d9353 = $(`<div id="html_25acdbb51c938c0307e93393360d9353" style="width: 100.0%; height: 100.0%;">VanDusen Botanical Garden</div>`)[0];
+                popup_01477807abac91b01924727dc79d3e76.setContent(html_25acdbb51c938c0307e93393360d9353);
+            
+        
+
+        marker_297ba8bdce02f3e6d561937fc4d48cfb.bindPopup(popup_01477807abac91b01924727dc79d3e76)
+        ;
+
+        
+    
+    
+            var marker_51899e33bd4f7ca58b14831023898d89 = L.marker(
+                [49.27752, -123.1474],
+                {}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+        var popup_d1f8c6a30bfb65529b7e30792fc032bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19856ff559b5eb3818fd33e6233a62d6 = $(`<div id="html_19856ff559b5eb3818fd33e6233a62d6" style="width: 100.0%; height: 100.0%;">Vancouver Maritime Museum</div>`)[0];
+                popup_d1f8c6a30bfb65529b7e30792fc032bb.setContent(html_19856ff559b5eb3818fd33e6233a62d6);
+            
+        
+
+        marker_51899e33bd4f7ca58b14831023898d89.bindPopup(popup_d1f8c6a30bfb65529b7e30792fc032bb)
+        ;
+
+        
+    
+    
+            var marker_4d1eb3c5a43b641ce8bf0aab37fd1849 = L.marker(
+                [49.27211, -123.1358],
+                {}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+        var popup_cd8c6890f6224dc6b9eeaf0c22a34095 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acc79cccaf14a76d7529d4fa09f663af = $(`<div id="html_acc79cccaf14a76d7529d4fa09f663af" style="width: 100.0%; height: 100.0%;">Granville Island</div>`)[0];
+                popup_cd8c6890f6224dc6b9eeaf0c22a34095.setContent(html_acc79cccaf14a76d7529d4fa09f663af);
+            
+        
+
+        marker_4d1eb3c5a43b641ce8bf0aab37fd1849.bindPopup(popup_cd8c6890f6224dc6b9eeaf0c22a34095)
+        ;
+
+        
+    
+    
+            var marker_bbeec170dd1455a2d01127b6beaf03ad = L.marker(
+                [49.28066, -123.0413],
+                {}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+        var popup_d148fbce527ef5f6cd44dfd4da9fc790 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aca23b7fed9e23a504673f3f03486ac9 = $(`<div id="html_aca23b7fed9e23a504673f3f03486ac9" style="width: 100.0%; height: 100.0%;">PNE - Pacific National Exhibition</div>`)[0];
+                popup_d148fbce527ef5f6cd44dfd4da9fc790.setContent(html_aca23b7fed9e23a504673f3f03486ac9);
+            
+        
+
+        marker_bbeec170dd1455a2d01127b6beaf03ad.bindPopup(popup_d148fbce527ef5f6cd44dfd4da9fc790)
+        ;
+
+        
+    
+    
+            var marker_442ec6f60a9d60c1772a6cbe96a299b2 = L.marker(
+                [49.24337, -123.1173],
+                {}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+        var popup_c078ceb73e402afb890c3c15b4b70398 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11306a7842d2d6a2491caa1feec6a9ad = $(`<div id="html_11306a7842d2d6a2491caa1feec6a9ad" style="width: 100.0%; height: 100.0%;">Bloedel Conservatory</div>`)[0];
+                popup_c078ceb73e402afb890c3c15b4b70398.setContent(html_11306a7842d2d6a2491caa1feec6a9ad);
+            
+        
+
+        marker_442ec6f60a9d60c1772a6cbe96a299b2.bindPopup(popup_c078ceb73e402afb890c3c15b4b70398)
+        ;
+
+        
+    
+    
+            var marker_bea44343983336da54060565f4763f36 = L.marker(
+                [49.26134, -123.1385],
+                {}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+        var popup_92186f58fd4f1edb36fa2f320cead753 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5f5509ff9ca233a9abaaf51b03ad3c3 = $(`<div id="html_c5f5509ff9ca233a9abaaf51b03ad3c3" style="width: 100.0%; height: 100.0%;">Arts Club Theatre Company</div>`)[0];
+                popup_92186f58fd4f1edb36fa2f320cead753.setContent(html_c5f5509ff9ca233a9abaaf51b03ad3c3);
+            
+        
+
+        marker_bea44343983336da54060565f4763f36.bindPopup(popup_92186f58fd4f1edb36fa2f320cead753)
+        ;
+
+        
+    
+    
+            var marker_ca8d794319d0c547d3b77a9ffe6c937c = L.marker(
+                [49.28587, -123.124],
+                {}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+        var popup_56d3b5682582fd9ec99b06717c1df5d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8248e8fc9ff69f8ae86bbcb00b41ae71 = $(`<div id="html_8248e8fc9ff69f8ae86bbcb00b41ae71" style="width: 100.0%; height: 100.0%;">CHI, the Spa at Shangri-la</div>`)[0];
+                popup_56d3b5682582fd9ec99b06717c1df5d8.setContent(html_8248e8fc9ff69f8ae86bbcb00b41ae71);
+            
+        
+
+        marker_ca8d794319d0c547d3b77a9ffe6c937c.bindPopup(popup_56d3b5682582fd9ec99b06717c1df5d8)
+        ;
+
+        
+    
+    
+            var marker_cf5901e6c1d0a713e4c7acd7187b2991 = L.marker(
+                [49.26485, -123.1387],
+                {}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+        var popup_72161a19a3a66d2a6267822c73f57e07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c8256594bc8aa9b1d906d86476713c6 = $(`<div id="html_5c8256594bc8aa9b1d906d86476713c6" style="width: 100.0%; height: 100.0%;">Douglas Reynolds Gallery</div>`)[0];
+                popup_72161a19a3a66d2a6267822c73f57e07.setContent(html_5c8256594bc8aa9b1d906d86476713c6);
+            
+        
+
+        marker_cf5901e6c1d0a713e4c7acd7187b2991.bindPopup(popup_72161a19a3a66d2a6267822c73f57e07)
+        ;
+
+        
+    
+    
+            var marker_71c1b44d931476c0d0ac5d67eebf65dd = L.marker(
+                [49.28695, -123.1407],
+                {}
+            ).addTo(map_9b0be5a39148bdb04f8c4de737c331ad);
+        
+    
+        var popup_bd349193d7f9ae1ab8475b4dea625a9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_945ac481a83d6409c3d9b5c0f68788b0 = $(`<div id="html_945ac481a83d6409c3d9b5c0f68788b0" style="width: 100.0%; height: 100.0%;">The Comedy Department</div>`)[0];
+                popup_bd349193d7f9ae1ab8475b4dea625a9d.setContent(html_945ac481a83d6409c3d9b5c0f68788b0);
+            
+        
+
+        marker_71c1b44d931476c0d0ac5d67eebf65dd.bindPopup(popup_bd349193d7f9ae1ab8475b4dea625a9d)
+        ;
+
+        
+    
+</script>
+</html>
