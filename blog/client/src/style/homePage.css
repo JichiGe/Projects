@@ -1,0 +1,129 @@
+.home {
+  .posts {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+
+    .postItem {
+      display: flex;
+      gap: 100px;
+
+      &:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+
+      .postItem_img {
+        flex: 2;
+        position: relative;
+
+        &::after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          background-color: #b9e7e7;
+          position: absolute;
+          top: 20px;
+          left: -20px;
+          z-index: -1;
+        }
+        img {
+          width: 100%;
+          max-height: 400px;
+          object-fit: cover;
+        }
+      }
+
+      .postItem_content {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        h1 {
+          font-size: 48px;
+        }
+        p {
+          font-size: 18px;
+        }
+
+        button {
+          width: max-content;
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+          background-color: white;
+          border: 1px solid teal;
+          color: teal;
+
+          &:hover {
+            border: 1px solid white;
+            background-color: #b9e7e7;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Media query for tablets */
+@media (max-width: 1024px) {
+  .home .posts .postItem {
+    flex-direction: column;
+    gap: 50px;
+
+    .postItem_img img {
+      max-height: 300px;
+    }
+
+    .postItem_content h1 {
+      font-size: 36px;
+    }
+
+    .postItem_content p {
+      font-size: 16px;
+    }
+  }
+}
+
+/* Media query for large phones */
+@media (max-width: 768px) {
+  .home .posts .postItem {
+    gap: 30px;
+
+    .postItem_img img {
+      max-height: 250px;
+    }
+
+    .postItem_content h1 {
+      font-size: 28px;
+    }
+
+    .postItem_content p {
+      font-size: 14px;
+    }
+  }
+}
+
+/* Media query for small phones */
+@media (max-width: 600px) {
+  .home .posts .postItem {
+    gap: 20px;
+
+    .postItem_img img {
+      max-height: 200px;
+    }
+
+    .postItem_content h1 {
+      font-size: 24px;
+    }
+
+    .postItem_content p {
+      font-size: 12px;
+    }
+  }
+}

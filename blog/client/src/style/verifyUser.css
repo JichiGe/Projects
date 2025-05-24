@@ -1,0 +1,14 @@
+
+.auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b9e7e7;
+    
+    h1{
+        font-size: 2rem;
+        color: teal;
+        margin-bottom: 1rem;
+    }
+}

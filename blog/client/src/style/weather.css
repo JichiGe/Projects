@@ -1,0 +1,89 @@
+.weather-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.weather-container button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#container {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+#container td {
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#container h1 {
+  justify-content: center;
+  font-size: 1.5em;
+  color: #333;
+}
+
+#container img {
+  width: 100px;
+  height: 100px;
+}
+
+/* Media query for tablets */
+@media (max-width: 1024px) {
+  #container {
+    width: 90%;
+  }
+
+  #container h1 {
+    font-size: 1.3em;
+  }
+
+  #container img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Media query for large phones */
+@media (max-width: 768px) {
+  #container {
+    width: 95%;
+  }
+
+  #container h1 {
+    font-size: 1.1em;
+  }
+
+  #container img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Media query for small phones */
+@media (max-width: 600px) {
+  #container {
+    width: 100%;
+  }
+
+  #container h1 {
+    font-size: 1em;
+  }
+
+  #container img {
+    width: 50px;
+    height: 50px;
+  }
+}

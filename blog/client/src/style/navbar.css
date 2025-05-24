@@ -1,0 +1,69 @@
+.navbar {
+  width: 100%;
+  .container {
+    padding: 10px 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .logo {
+      img {
+        width: 120px;
+      }
+    }
+    .authLink {
+      text-decoration: none;
+    }
+    .links {
+      display: flex;
+      text-decoration: none;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      .link {
+        text-decoration: none;
+        color: black;
+        h6 {
+          font-size: 16px;
+          font-weight: 300;
+        }
+      }
+    }
+    span {
+      text-decoration: none;
+      cursor: pointer;
+      color: black;
+      background-color: #b9e7e7;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 300;
+      border: 1px solid white;
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      &:hover {
+        width: 48 px;
+        height: 48px;
+        color: teal;
+        background-color: white;
+        border: 1px solid teal;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .container .links {
+    flex-wrap: wrap; /* Allow links to wrap onto multiple lines */
+    justify-content: center; /* Center-align the links */
+  }
+
+  .navbar .container .links .link {
+    margin: 5px; /* Add some spacing between links */
+  }
+}
