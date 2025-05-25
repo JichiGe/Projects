@@ -32,7 +32,7 @@ model BlogItem {
   desc        String   @db.Text
   category    String   @default("General")
   User        User     @relation(fields: [userId], references: [id]) 
-  img         String?  @default("https://shorturl.at/kxyDF")
+  img         String?  @default("https://shorturl.at/WQ8h9")
   createdAt   DateTime @default(now())
   userId      Int
   Comments    Comment[]
